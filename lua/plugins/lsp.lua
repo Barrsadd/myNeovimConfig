@@ -17,7 +17,7 @@ return {
 		vim.lsp.set_log_level("ERROR")
 
 		vim.diagnostic.config({
-			underline = false,
+			underline = true,
 			virtual_text = false,
 			signs = true,
 			float = { border = 'rounded' },
@@ -66,6 +66,7 @@ return {
 				"jsonls",
 				"bashls",
 				"clangd",
+                "pyright", 
 			},
 			automatic_installation = true,
 			handlers = {
